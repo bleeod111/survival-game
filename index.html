@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="icon" href="images/favicon.ico" type="images/s">
+        <!-- Integrer PHASER -->
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3.60/dist/phaser.js"></script>
+
+        <!-- Integrer moteur physique de PHASER pour gerer les colission-->
+        <script src="https://cdn.jsdelivr.net/npm/phaser-matter-collision-plugin"></script>
+
+        <title>Survival Game</title>
+
+        <style>
+        html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: #fff; 
+                display: flex;
+                justify-content: center;   
+                align-items: center;       
+            }
+            #container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #window-game {
+                box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                border-radius: 10px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="container">
+            <div id="window-game"></div>
+        </div>
+        <script type="module" src="js/survival-game.js"></script>
+    </body>
+</html>
